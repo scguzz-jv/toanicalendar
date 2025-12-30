@@ -78,5 +78,5 @@ document.getElementById("darkBtn").onclick = () =>
 
 setTimeout(() => {
   const w = document.getElementById("welcomeScreen");
-  if(w) w.style.display = "none";
+  if (w) w.style.display = "none";
 }, 5000);
