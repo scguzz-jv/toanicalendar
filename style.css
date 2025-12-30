@@ -1,0 +1,128 @@
+body {
+  font-family: "Segoe UI";
+  background: linear-gradient(135deg, #ffb6d9, #ffe4f1);
+}
+
+.container {
+  max-width: 520px;
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255,105,180,0.4);
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  background: url("https://i.pinimg.com/474x/a2/6a/eb/a26aebfffc0d0fb6b77c0ea3593fcaac.jpg");
+  position: absolute;
+  left: -110px;
+  top: 120px;
+  width: 95px;
+  height: 140px;
+  background-size: cover;
+  border-radius: 18px;
+}
+
+.container::after {
+  content: "";
+  background: url("https://i.pinimg.com/736x/be/7a/3e/be7a3e97b01cbfd9999c38e04f0e6aae.jpg");
+  position: absolute;
+  right: -110px;
+  top: 320px;
+  width: 95px;
+  height: 140px;
+  background-size: cover;
+  border-radius: 18px;
+}
+
+button {
+  background: linear-gradient(135deg, #ff69b4, #ff9ad5);
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 6px;
+  width: 100%;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 9px;
+  border-radius: 10px;
+  border: 1px solid #ffc1d9;
+  margin-top: 6px;
+}
+
+ul { padding-left: 0; }
+li {
+  list-style: none;
+  background: #fff0f7;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.dark {
+  background: linear-gradient(135deg, #2b0020, #4a0033);
+  color: white;
+}
+
+.dark .container {
+  background: #1f0016;
+}
+
+#welcomeScreen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  animation: fadeOut 5s forwards;
+  text-align: center;
+}
+
+#welcomeScreen h1 {
+  font-size: 32px;
+  color: #ff4fa0;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.kitty-title {
+  font-size: 30px;
+  color: #ff3f8f;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ffc0dd;
+  letter-spacing: 1px;
+}
+
+section h2 {
+  color: #ff69b4;
+  border-bottom: 2px dashed #ffc1dc;
+  padding-bottom: 4px;
+  margin-top: 14px;
+}
+
+button {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  border: 3px solid #ffd1e8;
+  background-image: radial-gradient(#fff 70%, #ffe6f2);
+}
+
+li {
+  border: 1px dashed #ffb6d9;
+}

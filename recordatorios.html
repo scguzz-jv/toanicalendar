@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyDay - Tu espacio personal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="welcomeScreen">
+  <h1>Hola Toani 💖</h1>
+  <p>Bienvenida a tu agenda personal</p>
+</div>
+
+<div class="container">
+  <h1>MyDay 🌷</h1>
+
+  <button id="darkBtn">🌙 Modo oscuro</button>
+
+  <section>
+    <h2>Mensaje del día</h2>
+    <p id="dailyMsg"></p>
+  </section>
+
+  <section>
+    <h2>Notas</h2>
+    <textarea id="noteInput" placeholder="Escribe algo bonito..."></textarea>
+    <button onclick="saveNote()">Guardar nota</button>
+    <ul id="noteList"></ul>
+  </section>
+
+  <section>
+    <h2>Recordatorios</h2>
+    <input type="text" id="taskInput" placeholder="¿Qué no debe olvidar?">
+    <input type="date" id="dateInput">
+    <button onclick="saveTask()">Guardar</button>
+    <ul id="taskList"></ul>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
